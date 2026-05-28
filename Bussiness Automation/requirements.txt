@@ -1,0 +1,4 @@
+instagrapi
+twilio
+schedule
+python-dotenv
