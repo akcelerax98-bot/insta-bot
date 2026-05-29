@@ -1,0 +1,145 @@
+Use this complete prompt:
+
+---
+
+# Instagram Outreach + WhatsApp Notification Automation
+
+Build a fully automated lead generation system for my Virtual Assistant service.
+
+## Objective
+
+Every day at 9:00 AM, the system should automatically find 5 new e-commerce Instagram accounts, send them an outreach message, and notify me via WhatsApp after the messages are sent.
+
+If any Instagram account replies to our outreach message, the system should automatically send a short acknowledgment message and immediately notify me via WhatsApp so I can manually continue the conversation.
+
+---
+
+## Daily Outreach Workflow
+
+### Step 1: Find Leads
+
+Every day at exactly 9:00 AM:
+
+* Find 5 new e-commerce Instagram business accounts.
+* Do not select accounts that were contacted previously.
+* Store contacted accounts in a database.
+* Save:
+
+  * Instagram Username
+  * Profile URL
+  * Date Contacted
+  * Message Status
+
+---
+
+### Step 2: Send Outreach Message
+
+Send the following Instagram DM to all 5 selected accounts:
+
+Hi 👋
+
+We came across your page and loved what you're building 🚀
+
+We provide a Virtual Assistant 🤖 that can take care of repetitive business tasks automatically.
+
+Tell us your biggest business challenge 💭, and we'll create a solution tailored to your needs ⚡
+
+We also share business growth ideas 📈 and marketing strategies 🎯 if you're interested.
+
+---
+
+### Step 3: WhatsApp Notification After Outreach
+
+After all 5 messages have been successfully sent, send me a WhatsApp notification.
+
+Notification Format:
+
+✅ Daily Instagram Outreach Completed
+
+📅 Date: DD/MM/YYYY
+⏰ Time: 09:00 AM
+
+Today's Outreach Accounts:
+
+1. @username1
+2. @username2
+3. @username3
+4. @username4
+5. @username5
+
+📊 Total Messages Sent: 5
+
+All outreach messages have been sent successfully.
+
+---
+
+## Reply Handling Workflow
+
+Monitor Instagram DMs continuously.
+
+Whenever any lead replies to our outreach message:
+
+### Step 1: Auto Reply
+
+Automatically send:
+
+Thank you for your response 🙌
+
+We appreciate your interest.
+
+Our team will review your message and DM you soon today 🚀
+
+### Step 2: WhatsApp Notification
+
+Immediately send a WhatsApp notification containing:
+
+* Instagram Username
+* Instagram Profile Link
+* Customer Reply Message
+* Date and Time
+
+Example:
+
+🚨 New Lead Reply Received
+
+👤 Instagram: @store_name
+
+💬 Customer Message:
+"Interested. Can you tell me more?"
+
+🔗 Profile:
+[https://instagram.com/store_name](https://instagram.com/store_name)
+
+⏰ Time:
+10:45 AM
+
+Action Required:
+Please continue the conversation manually on Instagram.
+
+---
+
+## Important Rules
+
+* Run automatically every day at 9:00 AM.
+* Contact only e-commerce Instagram accounts.
+* Never message the same account twice.
+* Maintain a database of all contacted accounts.
+* Send only 5 outreach messages per day.
+* After sending messages, notify me through WhatsApp.
+* If a lead replies, send the acknowledgment message automatically.
+* Immediately notify me through WhatsApp with the Instagram account name and customer reply.
+* I will manually continue the conversation after receiving the WhatsApp notification.
+* No chatbot conversations beyond the acknowledgment message.
+* No CRM.
+* No dashboard required.
+
+---
+
+## Suggested Tech Stack
+
+* Instagram Messaging Integration
+* WhatsApp Business API or Twilio WhatsApp
+* Google Sheets or Airtable for storing contacted accounts
+* Scheduler/Cron Trigger for daily 9:00 AM execution
+
+The final automation should work completely hands-free, only notifying me via WhatsApp after outreach is completed and whenever a lead responds.
