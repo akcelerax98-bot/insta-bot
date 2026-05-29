@@ -1,0 +1,20 @@
+2026-05-28 16:02:03,987 [INFO] ==================================================
+2026-05-28 16:02:04,025 [INFO] ==================================================
+2026-05-28 16:02:04,025 [INFO] Initializing database...
+2026-05-28 16:02:04,031 [INFO] Login attempt 1/5...
+2026-05-28 16:02:06,817 [INFO] https://i.instagram.com/api/v1/users/26720512741/info/
+2026-05-28 16:02:08,783 [INFO] None [200] GET https://i.instagram.com/api/v1/users/26720512741/info/?is_prefetch=false&entry_point=self_profile&from_module=self_profile&is_app_start=False (315.0.0.35.109, Samsung SM-G998B)
+2026-05-28 16:02:08,793 [INFO] Scheduling daily outreach at 09:00 AM...
+2026-05-28 16:02:08,795 [INFO]    Daily outreach is scheduled for 09:00 AM.
+2026-05-28 16:02:11,845 [INFO] https://i.instagram.com/api/v1/direct_v2/inbox/
+2026-05-28 16:02:12,809 [INFO] the_rare_catalyst [200] GET https://i.instagram.com/api/v1/direct_v2/inbox/?eb_device_id=0&igd_request_log_tracking_id=e02cf7c1-3eca-4385-bb3b-f1caa9604965&visual_message_return_type=unseen&thread_message_limit=10&persistentBadging=true&limit=20&is_prefetching=false&fetch_reason=initial_snapshot&include_old_mrs=false&no_pending_badge=true&push_disabled=true (315.0.0.35.109, Samsung SM-G998B)
+2026-05-28 16:20:11,404 [INFO] ==================================================
+2026-05-28 16:20:11,479 [INFO] ==================================================
+2026-05-28 16:20:11,480 [INFO] Initializing database...
+2026-05-28 16:20:11,484 [INFO] Login attempt 1/5...
+2026-05-28 16:20:13,850 [INFO] https://i.instagram.com/api/v1/users/26720512741/info/
+2026-05-28 16:20:15,134 [INFO] None [200] GET https://i.instagram.com/api/v1/users/26720512741/info/?is_prefetch=false&entry_point=self_profile&from_module=self_profile&is_app_start=False (315.0.0.35.109, Samsung SM-G998B)
+2026-05-28 16:20:15,140 [INFO] Scheduling daily outreach at 09:00 AM...
+2026-05-28 16:20:15,141 [INFO]    Daily outreach is scheduled for 09:00 AM.
+2026-05-28 16:20:18,746 [INFO] https://i.instagram.com/api/v1/direct_v2/inbox/
+2026-05-28 16:20:19,785 [INFO] the_rare_catalyst [200] GET https://i.instagram.com/api/v1/direct_v2/inbox/?eb_device_id=0&igd_request_log_tracking_id=ee90d0a9-b998-4d21-b657-4ffa95bb6320&visual_message_return_type=unseen&thread_message_limit=10&persistentBadging=true&limit=20&is_prefetching=false&fetch_reason=initial_snapshot&include_old_mrs=false&no_pending_badge=true&push_disabled=true (315.0.0.35.109, Samsung SM-G998B)
