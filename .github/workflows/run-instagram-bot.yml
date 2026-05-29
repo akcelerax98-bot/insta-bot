@@ -1,0 +1,24 @@
+name: Run Instagram Bot
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 9 * * *'  # daily at 09:00 UTC
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      - name: Build Docker image
+        run: docker build -t insta-bot .
+      - name: Run Instagram bot
+        env:
+          INSTAGRAM_USERNAME: ${{ secrets.INSTAGRAM_USERNAME }}
+          INSTAGRAM_PASSWORD: ${{ secrets.INSTAGRAM_PASSWORD }}
+          TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
+          TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
+          TWILIO_WHATSAPP_NUMBER: ${{ secrets.TWILIO_WHATSAPP_NUMBER }}
+          MY_WHATSAPP_NUMBER: ${{ secrets.MY_WHATSAPP_NUMBER }}
+        run: docker run --rm -e INSTAGRAM_USERNAME -e INSTAGRAM_PASSWORD -e TWILIO_ACCOUNT_SID -e TWILIO_AUTH_TOKEN -e TWILIO_WHATSAPP_NUMBER -e MY_WHATSAPP_NUMBER insta-bot python instagram_bot.py
